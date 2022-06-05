@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="map.css">
+    <script src="map.js" async></script>
+</head>
+
+<body>
+    <script>
+        function onSubmit(){
+            window.alert("Purchase is completed successfully!");
+        }
+    </script>
+
+    <header class="main-header">
+        <h1 class="brand-name brand-name-large"><code>E</code>Market</h1>
+        <nav class="main-nav nav">
+            <ul>
+                <li><a href="javascript:void(0)" class ="store-nav-link">Store</a></li>
+                <li><a href="javascript:void(0)" class="profile-nav-link">Profile</a></li>
+                <li><a href="javascript:void(0)" class="about-nav-link">About</a></li>
+                <li><a href="javascript:void(0)" class="sign-out-nav-link">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="map.png" alt="Italian Trulli" width="400" height="400" class="center">
+
+    <main>
+        <input type="input" class="form__field" placeholder="Your Address" name="address" id='address' required />
+        <label for="address" class="form__label"></label>
+        <p></p>
+
+        <p>Do you need an invoice?</p>
+        <label>Yes
+            <input type="radio" name="yes" checked />
+            <span></span>
+        </label>
+        <label>No
+            <input type="radio" name="no" />
+            <span></span>
+        </label>
+        <p></p>
+        <p>Delivery options</p>
+        <label>Delivery by courier to an address
+            <input type="radio" name="yes" checked />
+            <span></span>
+        </label>
+        <label> Pick up from store
+            <input type="radio" name="no" />
+            <span></span>
+        </label>
+        <p></p>
+        <button type="button" class="btn" onclick="onSubmit()">Submit</button>
+        <p></p>
+    </br>
+    </main>
+
+        
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="brand-name"><code>E</code>Market</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="../Store/Images/Socials/Youtube Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com" target="_blank">
+                        <img src="../Store/Images/Socials/Spotify Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../Store/Images/Socials/Facebook Logo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
